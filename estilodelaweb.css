@@ -61,10 +61,10 @@ p{
   text-align: center;
   font-size: 30px;
   display: flex;
-  height: 500px;
-  width: 500px;
-  margin: 30px;
-  padding: 0 0 0 30%;
+  height: 700px;
+  width: 700px;
+  margin: 20px;
+  padding: 0 0 0 20%;
   flex-direction: column;
 }
 .mp1{
@@ -75,125 +75,109 @@ p{
 }
 /*estiliza la barra de navagacion*/
 .container-nav {
-    display: flex;
-    padding: 10px;
-    height: 50px;
-    background-color: black;
-  }
-    
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-    
-  .brand {
-    display: flex;
-    align-items: center;
-  }
-  .brand img{
-    border: 1px solid white;
-    height: 50px;
-    margin: 5px;
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
 }
     
-  li>a {
-    padding: 8px 24px;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+    
+.brand {
+  display: flex;
+   align-items: center;
+}
+.brand img{
+  border: 1px solid white;
+  height: 50px;
+  margin: 5px;
+}
+    
+li>a {
+  padding: 8px 24px;
+}
      
-  li {
-    list-style-type: none;
-  }
+li {
+  list-style-type: none;
+}
       
-  a {
-    color: white;
-    text-decoration:none;
-  }
+a {
+  font-size: 20px;
+  color: white;
+  text-decoration:none;
+}
      
-  .nav-links {
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+    
+.button-menu-toggle {
+  display: none;
+}
+
+/*fin, estiliza la barra de navagacion*/
+/*adaptativilidad utilizando una media query*/
+@media (min-width:768px){
+  .aboutIMG{
     display: flex;
-    align-items: center;
+    height: 200px;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+    
+  .nav-links {
+    display: none;
   }
     
   .button-menu-toggle {
-    display: none;
+    display: block;
+    background-color: white;
+    border:none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
   }
-  /*fin, estiliza la barra de navagacion*/
-  
-  /*adaptativilidad utilizando una media query*/
-  @media (min-width:768px){
-    .aboutIMG{
-      display: flex;
-      height: 200px;
-      justify-content: center;
-      align-items: stretch;
-    }
-    iframe{
-      margin: 20px 0 20px 25%;
-      width: 560px;
-      height: 315px;
-      border-top-width: 0px;
-      border-bottom-width: 0px;
-      border-left-width: 0px;
-      border-right-width: 0px;
-    }
-  }
-  @media (max-width: 768px) {
-    .column {
-      flex: 100%;
-    }
-    
-    .nav-links {
-      display: none;
-    }
-    
-    .button-menu-toggle {
-      display: block;
-      background-color: white;
-      border:none;
-      border-radius: 50px;
-      padding: 0 24px;
-      font-family: monospace;
-      font-weight: bold;
-      font-size: 20px;
-    }
      
-    .nav-links.nav-links-responsive {
-      position: absolute;
-      display: flex;
-      background-color: rgba(20,20,20,0.95);
-      width: 100%;
-      height: 100%;
-      top: 70px;
-      left: 0;
-      flex-direction: column;
-      padding-top: 200px;
-      align-items: center;
-      gap:70px;
-      font-size: 40px;
-    }
-    .aboutIMG{
-      display: flex;
-      height: 100px;
-       width: 100px;
-      justify-content: center;
-      margin: auto;
-    }
-    iframe{
-      margin: 30px;
-      width: 280px;
-      height: 157px;
-      border-top-width: 0px;
-      border-bottom-width: 0px;
-      border-left-width: 0px;
-      border-right-width: 0px;
-    }
-    h1{
-      color: plum;
-      background-color:darkmagenta;
-      text-align: center;
-      font-size: 50px;
-      font-family: sans-serif;
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20,20,20,0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px;
+  }
+  .aboutIMG{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    margin: auto;
+  }
+  h1{
+    color: plum;
+    background-color:darkmagenta;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
   
   }
   .foto-mya{
