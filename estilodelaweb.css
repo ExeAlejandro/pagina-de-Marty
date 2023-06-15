@@ -189,11 +189,32 @@ a {
     display: flex;
     height: 350px;
     width: 350px;
-    margin: 30px;
-    padding: 0 0 0 0%;
+    margin: 0px;
+    padding: 10px 0 0 0;
     flex-direction: column;
+  }
+  .foto-mya img {
+    border: 1px solid black;
+    margin: 0 0 0 20px;
+    padding: 0px 0 0 0px;
   }
   p{
     font-size: 18px;
+  }
+  .locamart{
+    display: flex;
+    background-color:darkred;
+    color:khaki;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0 0 30%;
+  }
+  .video{
+    display: flex;
+    font-size: 20px;
+    color:khaki;
+    background-color:darkred;
+    margin:10px 0 0 40%;
+    padding:5px;
   }
 }
