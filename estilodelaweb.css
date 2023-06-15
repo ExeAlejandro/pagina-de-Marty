@@ -193,4 +193,7 @@ a {
     padding: 0 0 0 0%;
     flex-direction: column;
   }
+  p{
+    font-size: 18px;
+  }
 }
