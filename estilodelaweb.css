@@ -22,11 +22,12 @@ p{
     text-align: center;
 }
 .video{
-    font-size: 20px;
-    color:khaki;
-    background-color:darkred;
-    margin:5px;
-    padding:5px;
+  display: flex;
+  font-size: 20px;
+  color:khaki;
+  background-color:darkred;
+  margin:10px 0 0 48%;
+  padding:5px;
 }
 .foto-mart{
     color:lightgreen;
@@ -46,10 +47,12 @@ p{
      border: 1px black solid;
 }
 .locamart{
-    background-color:darkred;
-    color:khaki;
-    font-size: 18px;
-    padding: 10px;
+  display: flex;
+  background-color:darkred;
+  color:khaki;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px 0 0 45%;
 }
 .MFyolevi{
     font-size: 18px;
